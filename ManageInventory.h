@@ -25,7 +25,7 @@ class ManageInventory{
 	void addItem(string name, int quantity, float cost);
 
 	private:
-	int size = MAX_SIZE;
+	int size;
 	int count;
 	Item ** p_pInventoryItems;
 };
