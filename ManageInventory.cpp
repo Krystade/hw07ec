@@ -20,6 +20,7 @@ void ManageInventory::addItem(string name, int quantity, float cost){
 	}
 }
 ManageInventory::ManageInventory(){
+	size = MAX_SIZE;
 	count = 0;
 	p_pInventoryItems = new Item*[size];
 }
