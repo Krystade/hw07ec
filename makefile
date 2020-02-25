@@ -2,13 +2,16 @@ CC = g++
 Flags = -std=c++14 - Wall - g
 OBJS = 
 
-all: hw05
+all: hw07ec
 
-hw05: hw05.cpp Card.o Deck.o
-	$(CC)$(FLAGS)hw05.cpp -o hw05 $(OBJS)
+hw07ec: hw07ec.cpp ManageInventory.o
+	$(CC)$(FLAGS)hw07ec.cpp -o hw07ec $(OBJS)
+	
+ManageInventory.o: ManageInventory.cpp ManageInventory.h
+	$(CC)$(FLAGS) -c ManageInventory.cpp -o ManageInventory.o
 
 clean:
-	rm*.o hw05 hw05.tar
+	rm*.o hw07ec hw07ec.tar
 
 tar:
-	tar cf hw05.tar hw05.scr makefile hw05.cpp
+	tar cf hw07ec.tar hw07ec.scr makefile hw07ec.cpp
