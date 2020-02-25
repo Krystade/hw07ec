@@ -19,3 +19,12 @@ void ManageInventory::addItem(string name, int quantity, float cost){
 		p_pInventoryItems[count] = new Item();
 	}
 }
+ManageInventory::ManageInventory(){
+	count = 0;
+	p_pInventoryItems = new Item*[size];
+}
+ManageInventory::ManageInventory(int size){
+	count = 0;
+	this->size = size;
+	p_pInventoryItems = new Item*[size];
+}

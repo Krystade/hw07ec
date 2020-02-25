@@ -19,8 +19,8 @@ const int MAX_SIZE = 50;
 
 class ManageInventory{
 	public:
-	ManageInventory() : count{0}, p_pInventoryItems {new Item*[size]} { }
-	ManageInventory(int size) : size{size}, count{0}, p_pInventoryItems {new Item*[size]} { }
+	ManageInventory();
+	ManageInventory(int size);
 	~ManageInventory();
 	void addItem(string name, int quantity, float cost);
 

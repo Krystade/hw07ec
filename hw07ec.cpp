@@ -3,7 +3,7 @@
 // Author      : Jack Schmid
 // Version     :
 // Copyright   : Your copyright notice
-// Description : Hello World in C++, Ansi-style
+// Description : Extra credit for hw07, Practice with double pointers, new and delete, Ansi-style
 //============================================================================
 
 #include "hw07ec.h"
