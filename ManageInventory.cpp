@@ -19,20 +19,6 @@ ManageInventory::ManageInventory(int size){
 	count = 0;
 	p_pInventoryItems = new Item*[size];
 }
-//ManageInventory copy constructor
-ManageInventory::ManageInventory(const ManageInventory& source){
-	size = source.size;
-	count = 0;
-	p_pInventoryItems = new Item*[size];
-	//Loop through each value in the original's array in order to make a deep copy
-	for(int i = 0; i < source.count; i++){
-		p_pInventoryItems[i] = new Item();
-		p_pInventoryItems[i]->name = source.p_pInventoryItems[i]->name;
-		p_pInventoryItems[i]->quantity = source.p_pInventoryItems[i]->quantity;
-		p_pInventoryItems[i]->cost = source.p_pInventoryItems[i]->cost;
-		count++;
-	}
-}
 //ManageInventory destructor
 ManageInventory::~ManageInventory(){
 	for(int i = 0; i < size; i++){
