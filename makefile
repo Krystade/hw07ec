@@ -4,7 +4,7 @@ OBJS = ManageInventory.o
 
 all: hw07ec
 
-hw07ec: hw07ec.cpp ManageInventory.o Employee.o Programmer.o SoftwareArchitect.o
+hw07ec: hw07ec.cpp ManageInventory.o
 	$(CC) $(FLAGS) hw07ec.cpp -o hw07ec $(OBJS)
 
 ManageInventory.o: ManageInventory.cpp ManageInventory.h
